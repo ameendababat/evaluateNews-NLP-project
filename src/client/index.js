@@ -9,12 +9,7 @@ import './styles/footer.scss'
 import './styles/form.scss'
 import './styles/header.scss'
 
-
-
-// alert("I EXIST")
-
 const submentBtn = document.getElementById('submitButton');
 submentBtn.addEventListener('click',handleSubmit);
 
 export{handleSubmit};
-

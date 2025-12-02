@@ -9,7 +9,6 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     stats: 'minimal',
-   
     devServer: {
         port : 8081
     },
@@ -19,15 +18,11 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: "babel-loader",
-
                 options:{
                     presets: ['@babel/preset-env'] // Use preset-env for JavaScript transpilation
                 } 
             },
-
-          
-        { 
-                
+        {   
             test: /\.scss$/,
             use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
         }
@@ -49,9 +44,6 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({ 
             filename: "style.css" 
-
         }),
-
     ],
-   
 }
